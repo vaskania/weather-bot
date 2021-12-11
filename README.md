@@ -1,5 +1,3 @@
 ## Telegram bot
 
-    vaskaniaHolidaybot
-
-
+    vaskaniaWeatherbot

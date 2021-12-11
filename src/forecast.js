@@ -2,6 +2,7 @@ const axios = require('axios');
 const logger = require('./logger');
 
 const API = process.env.API_KEY;
+
 const getWeather = async (coordinates) => {
   const { latitude, longitude } = coordinates;
   try {
