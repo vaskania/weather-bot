@@ -4,7 +4,6 @@
 
     node-telegram-bot-api
     axios
-    country-code-emoji
     pino
     pino-pretty
 
@@ -21,11 +20,11 @@ My_bot -> Telegram_Api: Send msg to telegram api
 activate Telegram_Api
 Telegram_Api -> App : Send msg
 activate App
-App -> Holiday_Api : Send holiday request
-activate Holiday_Api
+App -> Weather_Api : Send forecast request
+activate Weather_Api
 
-Holiday_Api--> App : Response
-deactivate Holiday_Api
+Weather_Api--> App : Response forecast
+deactivate Weather_Api
 App--> Telegram_Api: Response
 deactivate App
 Telegram_Api--> My_bot: Response
